@@ -64,6 +64,8 @@ export default {
 }
 .list {
   box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
   @media (min-width: 1270px) {
     padding-left: 150px;
     padding-right: 150px;
