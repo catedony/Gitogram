@@ -10,7 +10,7 @@
       <div class="avatars"><Avatar class="avatar" v-for="n in 10" :key="n"/></div>
     </template>
   </Header>
-  <RepositoryList />
+  <RepositoryList :reps="reps" class="list" />
 </template>
 
 <script>
@@ -18,9 +18,16 @@ import Header from './../../components/Header.vue'
 import Logo from './../../components/Logo.vue'
 import Topline from './../../components/Topline.vue'
 import Avatar from './../../components/Avatar.vue'
+import RepositoryList from './../../components/RepositoryList.vue'
+import reps from './../../repositories.json'
 export default {
   name: 'Feeds',
-  components: { Header, Logo, Avatar, Topline }
+  components: { Header, Logo, Avatar, Topline, RepositoryList },
+  data () {
+    return {
+      reps: reps
+    }
+  }
 }
 </script>
 
@@ -54,5 +61,13 @@ export default {
   @media (min-width: 1270px) {
     padding: 50px 120px;
   }
+}
+.list {
+  box-sizing: border-box;
+  @media (min-width: 1270px) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  padding-bottom: 30px;
 }
 </style>

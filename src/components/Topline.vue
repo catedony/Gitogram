@@ -16,9 +16,6 @@ export default {
 
 <style lang="scss" scoped>
 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   place-items: center;
 }

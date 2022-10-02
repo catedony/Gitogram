@@ -24,6 +24,11 @@ body {
 p {
   margin: 0;
 }
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
 #app {
   height: 100px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
